@@ -1,7 +1,7 @@
 #include "Algorothm.h"
 
 
-float DiscreteWaveformAnalysis::sigmoid(float x) { return 1 / (1 - std::powf(E, -x)); }
+float DiscreteWaveformAnalysis::sigmoid(float x) { return 1 / (1 + std::powf(E, -x)); }
 
 std::vector<float> maxVector(std::vector<float> vector1, std::vector<float> vector2) {
     return vector1.size() > vector2.size() ? vector1 : vector2;
